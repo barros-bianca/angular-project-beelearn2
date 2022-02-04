@@ -20,6 +20,8 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { AlertasComponent } from './alertas/alertas.component';
+import { PageComponent } from './page/page.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -38,7 +40,9 @@ import { AlertasComponent } from './alertas/alertas.component';
     PostagemEditComponent,
     PostagemDeleteComponent,
     UserEditComponent,
-    AlertasComponent
+    AlertasComponent,
+    PageComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
