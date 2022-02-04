@@ -9,17 +9,21 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageComponent } from './page/page.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
 
   {path: '', redirectTo: 'entrar', pathMatch: 'full'},
-
+  
+  {path: 'page', component: PageComponent},
   {path:'entrar', component: EntrarComponent},
   {path: 'cadastrar', component: CadastrarComponent},
 
   {path: 'inicio', component: InicioComponent},
   {path: 'tema', component: TemaComponent},
 
+  {path: 'contact', component: ContactComponent},
   {path: 'tema-edit/:id', component: TemaEditComponent},
   {path: 'tema-delete/:id', component: TemaDeleteComponent},
   {path: 'postagem-edit/:id', component: PostagemEditComponent},
