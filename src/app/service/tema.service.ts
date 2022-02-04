@@ -16,27 +16,27 @@ export class TemaService {
   }
 
   getAllTema(): Observable<Tema[]>{
-    return this.http.get<Tema[]>('https://beelearn2.herokuapp.com/tema', this.token)
+    return this.http.get<Tema[]>('http://localhost:8080/grupo', this.token)
   }
 
   getByIdTema(id: number): Observable<Tema>{
-    return this.http.get<Tema>(`https://beelearn2.herokuapp.com/tema/${id}`, this.token)
+    return this.http.get<Tema>(`http://localhost:8080/grupo/${id}`, this.token)
   }
 
   getByNomeTema(nome: string): Observable<Tema[]>{
-    return this.http.get<Tema[]>(`https://beelearn2.herokuapp.com/tema/nome/${nome}`, this.token)
+    return this.http.get<Tema[]>(`http://localhost:8080/grupo/nome/${nome}`, this.token)
   }
 
   postTema(tema: Tema): Observable<Tema>{
-    return this.http.post<Tema>('https://beelearn2.herokuapp.com/tema', tema, this.token)
+    return this.http.post<Tema>('http://localhost:8080/grupo', tema, this.token)
   }
 
   putTema(tema: Tema): Observable<Tema>{
-    return this.http.put<Tema>('https://beelearn2.herokuapp.com/tema', tema, this.token)
+    return this.http.put<Tema>('http://localhost:8080/grupo', tema, this.token)
   }
 
   deleteTema(id: number) {
-    return this.http.delete(`https://beelearn2.herokuapp.com/tema/${id}`, this.token)
+    return this.http.delete(`http://localhost:8080/grupo/${id}`, this.token)
   }
 
 }
